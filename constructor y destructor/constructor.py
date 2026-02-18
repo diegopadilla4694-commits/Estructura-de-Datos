@@ -12,12 +12,12 @@ class Carreras():
          self.Escuela = Esc
     
      #Metodo Destructor
-     def __del__(self):
-         print("La clase a sido destruida")
+     """def __del__(self):
+         print("La clase a sido destruida")"""
           
 
 Carrera1 = Carreras("Ingenieria En ICCO", 120, "CUTonala")
-print(Carrera1.Escuela)
+print(Carrera1.nombre, Carrera1.creditos, Carrera1.Escuela)
 
 Carrera2 = Carreras("Ingenieria de Ciberseguridad", 200, "CUTonala")
 print(Carrera2.Escuela)
