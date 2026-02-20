@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi código de Encapsulamiento</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body style="background-color: #2d2d2d; color: white; font-family: sans-serif;">
+
+    <h1>Explicación de Encapsulamiento</h1>
+    <p>Diego, aquí abajo está el código que escribiste:</p>
+
+    <pre><code class="language-python">
+class Stack:
+    def __init__(self):
+        self.__stack_list = []
+
+
+    def push(self, val):
+        self.__stack_list.append(val)
+
+
+    def pop(self):
+        val = self.__stack_list[-1]
+        del self.__stack_list[-1]
+        return val
+
+
+stack_object = Stack()
+
+stack_object.push(3)
+stack_object.push(2)
+stack_object.push(1)
+
+print(stack_object.pop())
+print(stack_object.pop())
+print(stack_object.pop())
+
+
+class Personaje:
+    def __init__(self, nombre):
+        self.__nombre = nombre  # Esto es encapsulamiento
+
+print("Hola desde el archivo")
+
+    </code></pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</body>
+</html>
