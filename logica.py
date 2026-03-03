@@ -1,20 +1,13 @@
 def positive_sum(arr):
-    
-    bool = True
-    while True:
-        
-        numeros = int(input("ingrese un numero por favor: "))
-        
-        if arr != 0 or arr != " ":
-             arr.append(numeros)
-
-        if numeros <= 0:
-             break
-    
-    print(arr)
     total = 0
     for num in arr:
-        total = total + num
-        print(total)
+        if num > 0:
+            total += num
+        
+    return total
+     
+positive_sum(arr=[11 , -4, 7, 12])
 
-positive_sum(arr=[])
+r = positive_sum(arr=[11 , -4, 7, 12])
+print(r)
+
