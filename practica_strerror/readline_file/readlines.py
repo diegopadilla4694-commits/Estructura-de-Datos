@@ -1,4 +1,4 @@
-from os import streeror
+from os import strerror
 
 try:
     count = line_count = 0
@@ -8,7 +8,12 @@ try:
             print(character, end = '')
             count += 1
 
-        print("\n\n Caracteres del archivo:   ", count) 
+        print("\n\n Caracteres del archivo:   ", count)
         print("Lineas en el archivo:   ", line_count)
 except IOError as e:
-    print("Se produjo un error inesperado en: ", streeror(e.errno))
+    print("Se produjo un error inesperado en: ", strerror(e.errno))
+
+
+
+
+
