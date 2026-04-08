@@ -1,4 +1,5 @@
 import random
+from Kirby_Victory import Kirby_Victory 
 
 Rock = '''
 
@@ -73,6 +74,8 @@ if user_input in opcion:
             user_input == "Paper" and computer_input == "Rock" or \
             user_input == "Scissors" and computer_input == "Paper":
               print("YOU WIN")
+
+              Kirby_Victory()
 
          else:
              print("YOU LOSE")
